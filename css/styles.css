@@ -13,14 +13,16 @@ div {
     padding-bottom: 20px;
 }
 
-input[type="text"] {
-    padding: 5px;
-    width: 150px;
-}
+
 /* Hide the output paragraph until the user has submitted the form */
 p {
     background: #ffc125;
     color: #5e2612;
     padding: 10px;
     visibility: hidden;
+}
+
+.radioButton
+{
+    padding-left: 50px;
 }

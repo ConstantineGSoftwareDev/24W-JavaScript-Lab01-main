@@ -4,32 +4,69 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Lab 1 | COMP1073 Client-Side JavaScript</title>
-        <link href="css/styles.css" rel="stylesheet" />
+       
         <script src="js/silly-story.js" defer></script>
-    </head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 
-    <body>
-        <div>
-            <label for="customname">Enter custom name:</label>
-            <input id="customname" type="text" placeholder="" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<link href="css/styles.css" rel="stylesheet" />
+</head>
+
+    <body class="col-md-12">
+
+        <div class="container">
+            <div class="col-md-4">
+            
+            </div>
+            <div class="col-md-8">
+                <h1 class="display-4">Random Story Generator</h1>
+            </div>
+            <div class="col-md-3">
+                
+            </div>
         </div>
-        <div>
-            <label for="imperial">imperial</label>
-            <input
+        <div class="col-md-12">
+            <label class="col-md-4" for="customname">Enter custom name:</label>
+            <div class="col-md-4">
+                <input class="form-control" id="customname" type="text" placeholder="" />
+            </div>
+            
+        </div>
+        <div class="col-md-12">
+              <div class="form-check">
+                <input
+                class=" radioButton form-check-input"
                 id="imperial"
                 type="radio"
                 name="units"
                 value="imperial"
-                checked
-            />
-            <label for="metric">metric</label>
-            <input id="metric" type="radio" name="units" value="metric" />
+                checked />
+                <label class="form-check-label " for="imperial">imperial</label>
+              </div>
+    
+            <div class="form-check">
+                <input class="form-check-input" id="metric" type="radio" name="units" value="metric" />
+                <label class="form-check-label" for="metric">metric</label>
+            </div>
+
+            
+            
         </div>
-        <div>
-            <button class="randomize">Generate random story</button>
+        <div class="col-md-12">
+            <button  class="randomize btn btn-primary">Generate random story</button>
+        </div>
+
+        <div class="col-md-6">
+            <p class="story alert alert-warning"></p>
         </div>
         <!-- This lab based on the excellent assessment challenge at https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Silly_story_generator -->
-        <p class="story"></p>
+        
+
+
+        </p>
         
     </body>
 </html>
